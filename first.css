@@ -1,0 +1,74 @@
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --text: #e5e7eb;
+  --accent: #22d3ee;
+}
+.light {
+  --bg: #f9fafb;
+  --card: #ffffff;
+  --text: #0f172a;
+  --accent: #0ea5e9;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--card);
+  padding: 10px 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.btn {
+  padding: 8px 12px;
+  border: 1px solid var(--accent);
+  background: var(--card);
+  color: var(--text);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--card);
+}
